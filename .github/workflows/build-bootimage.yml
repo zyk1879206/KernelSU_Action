@@ -90,6 +90,7 @@ jobs:
             echo "CONFIG_KPROBE_EVENTS=y" >> arch/arm64/configs/${{ github.event.inputs.KERNEL_DEFCONFIG }}
         fi
         if [ ${{ github.event.inputs.DISABLE_LTO }} = true ]; then
+            sed -i 's/CONFIG_COMPAT_VDSO=y/CONFIG_COMPAT_VDSO=n/' arch/arm64/configs/${{ github.event.inputs.KERNEL_DEFCONFIG }}
             sed -i 's/CONFIG_LTO=y/CONFIG_LTO=n/' arch/arm64/configs/${{ github.event.inputs.KERNEL_DEFCONFIG }}
             sed -i 's/CONFIG_LTO_CLANG=y/CONFIG_LTO_CLANG=n/' arch/arm64/configs/${{ github.event.inputs.KERNEL_DEFCONFIG }}
             sed -i 's/CONFIG_THINLTO=y/CONFIG_THINLTO=n/' arch/arm64/configs/${{ github.event.inputs.KERNEL_DEFCONFIG }}
