@@ -26,7 +26,7 @@ KMI_GENERATION=0
 # Clang and Gcc environment configuration
 CC_FOR_BUILD=clang
 CLANG_VERSION=r450784d
-CROSS_COMPILE=aarch64-linux-gnu-
+CROSS_COMPILE=aarch64-linux-android-
 CROSS_COMPILE_COMPAT=$CROSS_COMPILE_ARM32
 LLVM=1
 LLVM_IAS=1
