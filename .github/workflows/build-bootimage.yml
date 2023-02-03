@@ -13,7 +13,7 @@ on:
       KERNEL_DEFCONFIG :
         description: 'KERNEL_DEFCONFIG'
         required: true
-        default: 'floral_defconfig'
+        default: 'defconfig'
       KERNEL_BUILD_CONFIG:
         description: 'Kernel Build Config'
         required: true
