@@ -1,5 +1,5 @@
 # Custom configuration
-DEFCONFIG=floral_defconfig
+DEFCONFIG=defconfig
 VENDOR_RAMDISK_BINARY=out/ramdisk
 BOOT_IMAGE_HEADER_VERSION=2
 BASE_ADDRESS=0x00000000
