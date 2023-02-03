@@ -10,6 +10,10 @@ on:
         description: 'Branch'
         required: true
         default: 'thirteen-plus'
+      KERNEL_DEFCONFIG :
+        description: 'KERNEL_DEFCONFIG'
+        required: true
+        default: 'floral_defconfig'
       KERNEL_BUILD_CONFIG:
         description: 'Kernel Build Config'
         required: true
