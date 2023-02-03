@@ -4,16 +4,7 @@ VENDOR_RAMDISK_BINARY=out/ramdisk
 BOOT_IMAGE_HEADER_VERSION=2
 BASE_ADDRESS=0x00000000
 PAGE_SIZE=4096
-KERNEL_CMDLINE += console=ttyMSM0,115200n8 androidboot.console=ttyMSM0 printk.devkmsg=on
-KERNEL_CMDLINE += msm_rtb.filter=0x237
-KERNEL_CMDLINE += ehci-hcd.park=3
-KERNEL_CMDLINE += service_locator.enable=1
-KERNEL_CMDLINE += androidboot.memcg=1 cgroup.memory=nokmem
-KERNEL_CMDLINE += usbcore.autosuspend=7
-KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3 swiotlb=2048
-KERNEL_CMDLINE += androidboot.boot_devices=soc/1d84000.ufshc
-KERNEL_CMDLINE += loop.max_part=7
-KERNEL_CMDLINE += cgroup_disable=pressure
+KERNEL_CMDLINE="console=ttyMSM0,115200n8 androidboot.console=ttyMSM0 printk.devkmsg=on msm_rtb.filter=0x237 ehci-hcd.park=3 service_locator.enable=1 androidboot.memcg=1 cgroup.memory=nokmem usbcore.autosuspend=7 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 androidboot.boot_devices=soc/1d84000.ufshc loop.max_part=7 cgroup_disable=pressure"
 MKBOOTIMG_EXTRA_ARGS += --header_version $(BOOT_IMAGE_HEADER_VERSION)
 BUILD_BOOT_IMG=1
 SKIP_VENDOR_BOOT=1
