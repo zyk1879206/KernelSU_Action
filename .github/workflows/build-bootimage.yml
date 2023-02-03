@@ -5,11 +5,11 @@ on:
       KERNEL_SOURCE:
         description: 'Kernel Source'
         required: true
-        default: 'https://github.com/PixelExperience-Devices/kernel_google_msm-4.14'
+        default: 'https://github.com/LineageOS/android_kernel_google_msm-4.14'
       KERNEL_SOURCE_BRANCH:
         description: 'Branch'
         required: true
-        default: 'thirteen-plus'
+        default: 'lineage-20'
       KERNEL_DEFCONFIG :
         description: 'KERNEL_DEFCONFIG'
         required: true
